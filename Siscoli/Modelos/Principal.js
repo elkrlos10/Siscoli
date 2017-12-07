@@ -15,15 +15,19 @@ SiscoliApp.config(function ($routeProvider) {
 
     // route for the home page
 
-          .when('/Busqueda', {
-              templateUrl: 'Views/indexP.html',
-              controller: 'BusquedaController'
-          })
+    .when('/Busqueda', {
+        templateUrl: 'Views/Busqueda.html',
+        controller: 'BusquedaController'
+     })
 
-          .when('/Login', {
-              templateUrl: 'Views/Login.html',
-              controller: 'LoginController'
-            })
+    .when('/Login', {
+        templateUrl: 'Views/Login.html',
+        controller: 'LoginController'
+    })
+    .when('/Lista', {
+        templateUrl: 'Views/lista.html',
+        controller: 'BusquedaController'
+    })
 
            
     //$locationProvider.html5Mode(true);
